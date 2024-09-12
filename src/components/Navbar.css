@@ -1,0 +1,95 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  /* Other styles */
+}
+
+.search-bar {
+  margin-left: auto;
+  padding: 5px;
+}
+
+.search-bar input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Basic reset and setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar-logo a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links .navLink {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links .navLink:hover {
+  color: #f0c040;
+}
+
+.cart-info {
+  display: flex;
+  align-items: center;
+}
+
+.cart-info .cart-icon {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.cart-info .cart-count {
+  background-color: #f0c040;
+  padding: 2px 8px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide the links on small screens */
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+}
